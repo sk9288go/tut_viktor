@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viktor Platform Information</title>
+    <style>
+        /* Some basic styling for the cards and buttons */
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            margin: 0;
+        }
+        h2 {
+            font-weight: 600;
+            font-size: 15px;
+            text-align: center;
+            color: #14142B;
+        }
+        .side-panel {
+            width: 500px;
+            padding: 20px;
+            background-color: #d6d6d6;
+            font-family: 'Noto Sans KR', sans-serif;
+            display: block;
+            font-style: normal;
+        }
+        .side-panel h2 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 116.7%;
+            text-align: left;
+            color: #1B1D2F;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .side-panel p {
+            font-size: 14px;
+            margin-left: 20px;
+        }
+        .centered-button {
+            justify-content: center;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .main-content header {
+            font-weight: bold;
+            font-size: 35px;            
+            text-align: left;
+            color: #181818;            
+            margin-bottom: 10px;
+            margin-left: 100px;
+        }
+        .sub-header {            
+            font-size: 12px;
+            width:60%;
+            text-align: left;
+            color: #4E4B66;
+            margin-top: 15px;
+            margin-left: 100px;            
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+        }       
+
+        .card {
+            max-width: 800px;
+            margin-left: 100px;
+            margin-right: 80px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자를 더 진하게 조정 */
+            background-color: #ececec;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            border: 1px solid black; /* 테두리 라인을 검은색으로 설정 */
+            text-align: center; /* 이미지를 가운데 정렬하기 위해 추가 */
+        }
+
+        .card img {
+            display: block; /* 이미지를 블록 레벨 요소로 변경 */
+            max-width: 100%; /* 이미지가 .card의 너비를 초과하지 않도록 조정 */
+            height: auto; /* 이미지 비율을 유지하며 높이 자동 조정 */
+            margin: auto; /* 상하 마진을 제외하고 좌우 마진을 auto로 설정하여 가운데 정렬 */
+            border-radius: 0px 0px 0 0;
+        }
+
+        .card-content {
+            text-align: left;                       
+            font-size: 12px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
+        .contained_secondary_button {
+            display: block;
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1B1D2F;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+        }
+        .contained_secondary_button:hover {
+            background-color: #2d345c;
+            cursor: pointer;
+        }
+        .outlined_button {
+            display: block;
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 10px;            
+            border-radius: 5px;
+            background-color: white;       
+            
+        }
+        .outlined_button:hover {
+            background-color: #91c8ff14;
+            cursor: pointer;
+        }
+        button_text {
+          width: 153px;
+          height: 26px;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 26px;
+          letter-spacing: 0.46px;
+          text-transform: capitalize;
+          color: #FFFFFF;
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <img src="https://i.ibb.co/wsnfWZG/images.png" width ='50px'> 정림건축 일사분석 Web App
+            </header>
+            <div class = "sub-header">
+                <p>이 앱은 Ladybug Tool과 Grasshopper 스크립트를 활용하여 사용자가 간단한 건축 3D 모델, 매스 또는 파사드를 업로드하고,<br> 이를 통해 일사량을 분석한 후 보고서 형태로 결과를 출력하는 기능을 제공합니다. 사용자는 10MB 이내의 OBJ 파일을 업로드할 수 있습니다.
+                  <br><br>세부 조정이 필요한 사용자는 Grasshopper 스크립트를 다운로드하여 Ladybug Tool을 설치 후 사용할 수 있습니다. <br>추가 지원이 필요한 경우, NewTech의 GT팀 또는 DT팀에 문의하시기 바랍니다.               
+                  <br><br> <b>분석을 시작하려면, '분석 요소 설정'으로 넘어가서 OBJ 파일을 업로드해 주세요.</b>
+                </p>
+            </div>                            
+                <div class="card">                                    
+                    <img src="https://i.ibb.co/bmzsWMb/diagram.jpg">                            
+                        <div class="card-content">
+                            <p>아래의 사용자 인풋를 받아 정림의 사내 워크스테이션으로 값을 json으로 보낸뒤 <br>그래스호퍼를 실행, 결과값을 불러옵니다:</p>
+                                <ol> 
+                                    <li>분석할 건물 혹은 파사드의 OBJ 파일</li>
+                                    <li>분석할 주변 건물 / 환경 OBJ 파일</li>
+                                    <li>기타 설정 값</li>
+                                </ol>
+                        </div>                           
+                    </div>                                   
+            </div>
+
+        <!-- Side Panel -->
+        <div class="side-panel">
+            <div class="logo-container">
+                <img src="http://font.junglim.com/img/competition/logo-junglim.png" class="logo">
+            </div>
+            
+            <h2>다운로드</h2>
+            <p>디테일한 조정이 필요하시면 Grasshopper 스크립트를 다운받아 ladybug-tool 설치 후 사용해주세요. 간단한 설명은 매뉴얼 참고해주세요</p>
+                
+                <div class="button-container">
+                    <a href="https://demo.viktor.ai"  class="contained_secondary_button">그래스호퍼 파일 다운로드</a>
+                </div>
+                <div class="button-container">
+                    <a href="https://demo.viktor.ai"  class="contained_secondary_button">매뉴얼 pdf 다운로드</a>
+                </div>
+            
+            <h2>HELP</h2>
+            <p>질문이 있으시면 NewTech의 게시판에 글을 남겨주세요</p>
+                <div class="button-container">
+                    <a href="https://community.viktor.ai/" class="contained_secondary_button">커뮤니티 게시판</a>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

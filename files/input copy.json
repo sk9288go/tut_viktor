@@ -1,0 +1,18 @@
+{
+    "filePath": "C:/skp/tut-app/files/Building01.obj",
+    "contextPath": "C:/skp/tut-app/files/context1.obj",
+    "save_Path": "C:/skp/viktor-apps/tut_viktor/files",
+    "epw_loc": "서울",
+    "start_month": 1,
+    "start_day": 1,
+    "start_hour": 6,
+    "end_month": 12,
+    "end_day": 31,
+    "end_hour": 20,
+    "timestep": 1,
+    "grid_size": 10,
+    "offset_dist": 1,
+    "analysis_min": 1,
+    "analysis_max": 1200,
+    "color_index": 3
+}
